@@ -59,6 +59,18 @@
 	<!-- Start of bodyEnd -->
     
     <!-- End of bodyEnd -->
+    <script>
+        // Force animation after page loads
+        setTimeout(function() {
+            document.querySelectorAll("span[style*=\"opacity:0.001\"]").forEach(function(el) {
+                el.style.opacity = "1";
+                el.style.filter = "none";
+                el.style.transform = "none";
+            });
+            var aboutSection = document.querySelector("[data-framer-name*=\"About\"]");
+            if (aboutSection) aboutSection.style.opacity = "1";
+        }, 500);
+    </script>
 </body>
 
 <!-- Mirrored from studioanthropology.framer.website/about by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Apr 2026 16:48:02 GMT -->
