@@ -1,2 +1,0 @@
-import{t as e}from"./rolldown-runtime.CXBuSdYp.mjs";function t(e,t){return{description:`Multidisciplinary design studio working at the intersection of industrial design, human behaviour, and material intelligence.`,favicon:`https://framerusercontent.com/assets/p07WUU4Gj7pkjYLOP7vJIan8w.png`,robots:`max-image-preview:large`,socialImage:`https://framerusercontent.com/assets/BBnHWmq6QtNzJzKP587IM7MU7Ag.jpeg`,title:`Studio Anthropology`}}var n=e((()=>{}));export{t as n,n as t};
-//# sourceMappingURL=shared-lib.BmmrW-Se.mjs.map
