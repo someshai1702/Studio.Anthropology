@@ -91,9 +91,18 @@
     margin: 0 auto 16px auto !important;
     display: block !important;
 }
-/* Ensure all service cards have same min-height */
-[class*="framer-"][class*="service"] {
-    min-height: 280px !important;
+/* Remove gaps between service cards and ensure uniform sizing */
+[data-framer-name*="Service"] > div,
+[data-framer-component-type="Stack"] > div {
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* Target all service card containers to remove vertical gaps */
+[class*="framer-"][data-framer-name*="Card"],
+[class*="framer-"][data-framer-name*="Service"] {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 </style></body>
 </html>
