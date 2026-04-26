@@ -104,14 +104,32 @@
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
-/* Make service boxes uniform - equal height and width */
+/* Make ALL service boxes completely uniform */
 .framer-pbvuJ {
     display: flex !important;
     flex-direction: column !important;
     flex: 1 !important;
     min-height: 280px !important;
+    height: 280px !important;
+    max-height: 280px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    padding: 24px !important;
+    margin: 0 !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+}
+/* Force ALL boxes to have exact same dimensions and layout */
+.framer-pbvuJ > * {
+    flex: 1 !important;
+    width: 100% !important;
+}
+/* Ensure icon images are centered and same size in ALL boxes */
+.framer-pbvuJ img {
+    width: 48px !important;
+    height: 48px !important;
+    margin: 0 auto 16px auto !important;
+    display: block !important;
 }
 </style></body>
 </html>
