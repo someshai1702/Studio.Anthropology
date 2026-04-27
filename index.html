@@ -102,23 +102,82 @@
 	<!-- Start of bodyEnd -->
     
     <!-- End of bodyEnd -->
-<script>document.addEventListener("DOMContentLoaded",function(){var cards=document.querySelectorAll("p");for(var i=0;i<cards.length;i++){if(cards[i].textContent.includes("Social Innovation Design")){var icon=document.createElement("img");icon.src="images/icon-medical.svg";icon.setAttribute("width","48");icon.setAttribute("height","48");icon.style.cssText="display:block;margin:0 auto 16px auto";var heading=cards[i].closest('div');if(heading){heading.insertBefore(icon,heading.firstChild)};}}}}</script><style>.service-icon{width:48px;height:48px;margin:0 auto 16px auto;display:block}</style><script>document.addEventListener("DOMContentLoaded",function(){var ps=document.querySelectorAll("p");for(var i=0;i<ps.length;i++){if(ps[i].textContent.includes("Social Innovation Design")){var icon=document.createElement("img");icon.src="images/icon-medical.svg";icon.className="service-icon";var container=ps[i].parentElement;while(container&&!container.getAttribute("data-framer-name")){container=container.parentElement}if(container){container.insertBefore(icon,container.firstChild)}}}})</script><style>/* Service card alignment fix */
-/* Make Box 2 and Box 4 look exactly like Box 1 and Box 3 */
-.framer-pbvuJ:nth-child(2),
-.framer-pbvuJ:nth-child(4) {
+<script>document.addEventListener("DOMContentLoaded",function(){var cards=document.querySelectorAll("p");for(var i=0;i<cards.length;i++){if(cards[i].textContent.includes("Social Innovation Design")){var icon=document.createElement("img");icon.src="images/icon-medical.svg";icon.setAttribute("width","48");icon.setAttribute("height","48");icon.style.cssText="display:block;margin:0 auto 16px auto";var heading=cards[i].closest('div');if(heading){heading.insertBefore(icon,heading.firstChild)};}}}}</script><style>.service-icon{width:48px;height:48px;margin:0 auto 16px auto;display:block}</style><script>document.addEventListener("DOMContentLoaded",function(){var ps=document.querySelectorAll("p");for(var i=0;i<ps.length;i++){if(ps[i].textContent.includes("Social Innovation Design")){var icon=document.createElement("img");icon.src="images/icon-medical.svg";icon.className="service-icon";var container=ps[i].parentElement;while(container&&!container.getAttribute("data-framer-name")){container=container.parentElement}if(container){container.insertBefore(icon,container.firstChild)}}}})</script><style>/* Service card alignment fix - all devices */
+.framer-pbvuJ {
     min-height: 280px !important;
     height: 100% !important;
     width: 100% !important;
     padding: 24px !important;
     box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
 }
-/* Make icons in Box 2 and Box 4 same size as Box 1 and Box 3 */
-.framer-pbvuJ:nth-child(2) img,
-.framer-pbvuJ:nth-child(4) img {
+
+/* Make all service card icons same size and centered */
+.framer-pbvuJ img {
     width: 48px !important;
     height: 48px !important;
     margin: 0 auto 16px auto !important;
     display: block !important;
+}
+
+/* Ensure text is centered in all boxes */
+.framer-pbvuJ p,
+.framer-pbvuJ h1,
+.framer-pbvuJ h2,
+.framer-pbvuJ h3,
+.framer-pbvuJ h4 {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* Mobile fixes */
+@media (max-width: 809.98px) {
+    .framer-pbvuJ {
+        min-height: auto !important;
+        padding: 20px !important;
+    }
+}
+
+/* Fix scroll sticking issue on mobile */
+html, body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    position: static !important;
+}
+
+body {
+    overscroll-behavior: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for service section on mobile - stop sticky scroll */
+.ssr-variant,
+.framer-oKBq7 {
+    position: relative !important;
+    height: auto !important;
+    min-height: auto !important;
+    overflow: visible !important;
+    transform: none !important;
+}
+
+@media (max-width: 809.98px) {
+    html, body {
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Fix viewport issues */
+    html {
+        fix-aspect-ratio: auto;
+    }
+    
+    /* Ensure proper mobile scroll within services */
+    .framer-pbvuJ {
+        touch-action: pan-y !important;
+    }
 }
 </style><style>/* CSS Animation Fix - No Framer Animator */ @keyframes fadeInUp {from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}} [style*="opacity:0.001"]{opacity:1!important;filter:none!important;transform:none!important} [data-framer-appear-id]{opacity:1!important;transform:none!important;filter:none!important}</style><script>window.__framer_disable_appear_effects_optimization__=true</script><script>
 (function() {
